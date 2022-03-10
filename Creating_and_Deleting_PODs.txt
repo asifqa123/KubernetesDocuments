@@ -1,0 +1,34 @@
+Q. What are POD's?
+
+A. Pods are the smallest, most basic deployable objects in Kubernetes.A Pod represents a single instance of a running process in your cluster. Pods contain one or more containers. When a Pod runs multiple containers, the containers are managed as a single entity and share the Pod's resources.
+
+Command:
+Here, we are trying to create a weapp POD using imperative method.
+
+controlplane ~ ➜  kubectl run webapp --image=nginx --dry-run=client -o yaml > pod1.yaml
+
+controlplane ~ ➜  cat pod1.yaml
+ 
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: webapp
+  name: webapp
+spec:
+  containers:
+  - image: nginx
+    name: webapp
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+
+controlplane ~ ➜  kubectl create -f pod1.yaml 
+pod/webapp created
+
+controlplane ~ ➜  kubectl delete pod webapp
+pod "webapp" deleted
+
+controlplane ~ ➜  
