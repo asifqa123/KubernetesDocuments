@@ -12,7 +12,7 @@ We can create a ConfigMap using Imperative method or Declarative method.
 
 First we are adding all the settings/parameters into a file called config.txt as shown below
 
-![](Aspose.Words.1b41a5f8-f5c8-458c-9d38-d454810895f5.001.png)
+![image](https://user-images.githubusercontent.com/26220908/157751320-f882a6d6-18d1-4d34-9a77-d45bca84305e.png)
 
 Now, we used the above file to create a configMap as my-config as shown below.
 
