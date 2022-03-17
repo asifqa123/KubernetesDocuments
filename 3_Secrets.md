@@ -74,14 +74,16 @@ You can also decode the base64 credentials if you want as shown below.
 ![image](https://user-images.githubusercontent.com/26220908/158867349-465a31b9-41e0-48f8-a57f-466f9ab85850.png)
 
 
-Now, it’s time to consume these SECRETS in PODS. We can consume SECRETS inside POD in two ways.
+**Now, it’s time to consume these SECRETS in PODS. We can consume SECRETS inside POD in two ways.**
+
 1.	Using Volumes
 2.	Using Environment Variables.
 
 ![image](https://user-images.githubusercontent.com/26220908/158867406-249fb97e-9407-4b5a-97e6-fd40329986fa.png)
 
 
-1st Method: Consume SECRETS using Volumes:
+**1st Method: Consume SECRETS using Volumes:**
+
 Here, we can see that we are using SECRET mysecret under volumes section.
 NOTE: We created mysectet in previous steps
 
@@ -99,7 +101,8 @@ After the POD is created, we can see that the POD is in Running state which is u
 
 
 
-2nd Method: Consume SECRETS using Environment Variables:
+**2nd Method: Consume SECRETS using Environment Variables:**
+
 Let’s create SECRETS using --from-literal option as shown below.
 
 ![image](https://user-images.githubusercontent.com/26220908/158867560-ba37b4f9-8bac-4560-84ff-74b88a30040b.png)
@@ -112,7 +115,7 @@ We can see the details of the SECRET by using the below describe command.
 
 Now, let’s use the above SECRET in our Environment Variable of POD definition file.
 We can create a POD using the below definition file by running the below command 
-“kubectl create –f pod.yaml”
+**“kubectl create –f pod.yaml”**
 
 ![image](https://user-images.githubusercontent.com/26220908/158867635-bd9eb2e2-6b98-46df-b76b-fb4ce18f49fd.png)
 
