@@ -55,6 +55,7 @@ To create SECRETS manually, first we need to convert the credentials to base64 f
 
 
 Then, use those credentials inside the SECRET yaml file like this.
+
 ![image](https://user-images.githubusercontent.com/26220908/158867262-fbbfad4e-c9f7-4047-9839-ea66f7b2212a.png)
 
 
@@ -76,6 +77,7 @@ You can also decode the base64 credentials if you want as shown below.
 Now, it’s time to consume these SECRETS in PODS. We can consume SECRETS inside POD in two ways.
 1.	Using Volumes
 2.	Using Environment Variables.
+
 ![image](https://user-images.githubusercontent.com/26220908/158867406-249fb97e-9407-4b5a-97e6-fd40329986fa.png)
 
 
